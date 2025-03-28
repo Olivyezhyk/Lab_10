@@ -1,0 +1,5 @@
+﻿  UnitTest4.cpp
+C:\Users\olegs\Desktop\University\github\Lab_10\Lab_10_04\Lab_10_04.cpp(41,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file '/UnitTest4.cpp')
+  
+  UnitTest4.vcxproj -> C:\Users\olegs\Desktop\University\github\Lab_10\x64\Debug\UnitTest4.dll
