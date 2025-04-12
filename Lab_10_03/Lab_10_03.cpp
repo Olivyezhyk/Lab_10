@@ -73,7 +73,7 @@ void displayNotesFromFile(const string& filename) {
     }
 
     Note tempNote;
-    cout << left << setw(15) << "Surname" << setw(15) << "Name" << setw(15) << "Phone" << "Birthdate" << endl;
+    cout << left << setw(15) << "\nSurname" << setw(15) << "Name" << setw(15) << "Phone" << "Birthdate" << endl;
     while (fin >> tempNote.surname >> tempNote.name >> tempNote.phone
         >> tempNote.birthDate[0] >> tempNote.birthDate[1] >> tempNote.birthDate[2]) {
         cout << left << setw(15) << tempNote.surname << setw(15) << tempNote.name

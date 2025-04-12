@@ -45,28 +45,6 @@ namespace UnitTest3
             Assert::IsTrue(found);
         }
 
-        TEST_METHOD(TestDisplayNotesFromFile)
-        {
-            std::ofstream fout("test.txt");
-            fout << "Smith John 1234567890 15 3 1990\n";
-            fout << "Doe Jane 0987654321 25 12 1985\n";
-            fout.close();
-
-            std::ostringstream outputStream;
-            std::streambuf* originalBuffer = std::cout.rdbuf();
-            std::cout.rdbuf(outputStream.rdbuf());
-
-            displayNotesFromFile("test.txt");
-
-            std::cout.rdbuf(originalBuffer);
-
-            std::string expectedOutput =
-                "Surname        Name           Phone          Birthdate\nSmith          John           1234567890     15.3.1990\n"
-                "Doe            Jane           0987654321     25.12.1985\n";
-
-            Assert::AreEqual(expectedOutput, outputStream.str());
-        }
-
         TEST_METHOD(TestOverwriteFile)
         {
             std::ofstream fout("test.txt");

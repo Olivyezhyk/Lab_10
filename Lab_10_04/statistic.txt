@@ -1,0 +1,4 @@
+Line count: 5
+Max line length: 39
+Empty line count: 1
+String that starts with 'T' and ends with '!': Test line starts with H and ends with !
